@@ -15,7 +15,9 @@ RUN apt-get install -y \
     valgrind \
     cppcheck \
     check \
-    g++
+    g++ \
+    make \
+    cmake
 
 # zsh config
 RUN curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
