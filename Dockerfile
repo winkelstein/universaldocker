@@ -17,7 +17,8 @@ RUN apt-get install -y \
     check \
     g++ \
     make \
-    cmake
+    cmake \
+    clang
 
 # zsh config
 RUN curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
