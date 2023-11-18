@@ -23,7 +23,7 @@ RUN apt-get install -y \
 RUN curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 RUN echo clear >> ~/.zshrc
 RUN echo neofetch >> ~/.zshrc
-
+RUN echo "alias sh='bash'" >> ~/.zshrc
 COPY . /project
 
 WORKDIR /project
