@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker rmi -f winkelstein_docker && docker build --tag winkelstein_docker . && docker run -it winkelstein_docker zsh
+docker build --tag winkelstein_docker . && docker run -it --name tester --rm -v $(pwd):/project winkelstein_docker /bin/zsh

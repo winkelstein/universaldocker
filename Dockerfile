@@ -11,7 +11,6 @@ RUN apt-get install -y \
 # some developers tools
 RUN apt-get install -y \
     git \
-    python3 \
     valgrind \
     cppcheck \
     check \
@@ -26,6 +25,5 @@ RUN curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.s
 RUN echo clear >> ~/.zshrc
 RUN echo neofetch >> ~/.zshrc
 RUN echo "alias sh='bash'" >> ~/.zshrc
-COPY . /project
 
 WORKDIR /project
