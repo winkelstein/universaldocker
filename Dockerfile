@@ -14,6 +14,7 @@ RUN apt-get install -y \
     valgrind \
     cppcheck \
     check \
+    libgtest-dev \
     g++ \
     make \
     cmake \
