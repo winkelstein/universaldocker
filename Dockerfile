@@ -6,20 +6,25 @@ RUN apt-get update
 RUN apt-get install -y \
     neofetch \
     zsh \
-    curl
+    curl \
+    vim
 
 # some developers tools
 RUN apt-get install -y \
-    git \
-    valgrind \
-    cppcheck \
-    check \
-    libgtest-dev \
     g++ \
+    git \
     make \
     cmake \
     clang \
+    valgrind \
+    cppcheck \
     clang-format
+
+# libraries
+RUN apt-get install -y \
+    check \
+    libgtest-dev \
+    libncurses-dev
 
 # zsh config
 RUN curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
